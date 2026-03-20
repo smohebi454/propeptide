@@ -10,6 +10,75 @@
 <link rel="stylesheet" href="/assets/css/variables.css?v=1">
 <link rel="stylesheet" href="/assets/css/main.css?v=1">
 <script defer src="/assets/js/main.js?v=1"></script>
+<style>
+.batch-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.batch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.batch-badge {
+  background: #16a34a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.batch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 28px;
+}
+.batch-stat {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  text-align: center;
+}
+.batch-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+.batch-value {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.batch-image { margin-bottom: 24px; }
+.batch-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .batch-grid { grid-template-columns: repeat(2, 1fr); }
+  .batch-card { padding: 20px; }
+}
+@media (max-width: 480px) {
+  .batch-grid { grid-template-columns: 1fr; }
+}
+</style>
 </head>
 <body>
 
@@ -43,23 +112,53 @@
   </div>
 </section>
 
-<!-- Testing Specs Banner -->
-<div class="container" style="padding-bottom:20px">
-  <div class="standards-grid">
-    <div class="standard-card">
-      <h4>Method</h4>
-      <p>HPLC &amp; MS</p>
-    </div>
-    <div class="standard-card">
-      <h4>Purity Standard</h4>
-      <p>≥ 99%</p>
-    </div>
-    <div class="standard-card">
-      <h4>Lab Type</h4>
-      <p>Independent</p>
+<!-- Batch RETP002 Result Card -->
+<section style="padding:48px 0 60px">
+  <div class="container">
+    <div class="batch-card">
+      <div class="batch-header">
+        <div>
+          <h2 style="font-size:1.4rem;font-weight:700;margin-bottom:4px">Batch RETP002 — Retatrutide 30mg FlexiPen</h2>
+          <p style="font-size:0.9rem;color:var(--text-light)">Independently tested by Janoshik Analytical</p>
+        </div>
+        <span class="batch-badge">Verified</span>
+      </div>
+      <div class="batch-grid">
+        <div class="batch-stat">
+          <span class="batch-label">HPLC Purity</span>
+          <span class="batch-value">99.262%</span>
+        </div>
+        <div class="batch-stat">
+          <span class="batch-label">Concentration</span>
+          <span class="batch-value">12.09 mg/mL</span>
+        </div>
+        <div class="batch-stat">
+          <span class="batch-label">Method</span>
+          <span class="batch-value">HPLC</span>
+        </div>
+        <div class="batch-stat">
+          <span class="batch-label">Task Number</span>
+          <span class="batch-value">#86428</span>
+        </div>
+        <div class="batch-stat">
+          <span class="batch-label">Date Analysed</span>
+          <span class="batch-value">04 Nov 2025</span>
+        </div>
+        <div class="batch-stat">
+          <span class="batch-label">Verification Key</span>
+          <span class="batch-value" style="font-size:0.82rem;letter-spacing:0.02em">97SPA761BJUL</span>
+        </div>
+      </div>
+      <div class="batch-image">
+        <img src="/remediumtestresults.webp" alt="Janoshik Analytical HPLC test results for Retatrutide batch RETP002 — 99.262% purity" width="800" height="600" loading="lazy" style="width:100%;border-radius:var(--radius);border:1px solid var(--border)">
+      </div>
+      <div class="batch-actions">
+        <a href="/janoshik-analytical-coa.pdf" class="btn btn-primary" target="_blank" rel="noopener">Download Full COA (PDF)</a>
+        <a href="/product" class="btn btn-outline">View Product</a>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- Testing Process -->
 <section class="test-section">
@@ -79,13 +178,13 @@
       </div>
       <div class="test-step">
         <div class="test-step-num">3</div>
-        <h3>HPLC and MS Analysis</h3>
-        <p>High-performance liquid chromatography (HPLC) confirms ≥99.3% purity, while mass spectrometry (MS) verifies molecular identity.</p>
+        <h3>HPLC Analysis</h3>
+        <p>High-performance liquid chromatography confirms 99.262% purity for batch RETP002, verified by Janoshik Analytical.</p>
       </div>
       <div class="test-step">
         <div class="test-step-num">4</div>
-        <h3>Certification (COA)</h3>
-        <p>Each production batch is issued a Certificate of Analysis (COA). This document is made publicly available.</p>
+        <h3>Certificate of Analysis</h3>
+        <p>Each batch receives a COA with verification key. Batch RETP002: key 97SPA761BJUL, verifiable directly with Janoshik.</p>
       </div>
     </div>
   </div>
@@ -98,15 +197,15 @@
     <div class="standards-grid" style="max-width:860px;margin:32px auto 0">
       <div class="standard-card">
         <h4>HPLC</h4>
-        <p>Ensures active substance concentration ≥99%</p>
+        <p>Confirms active substance concentration — 99.262% for current batch</p>
       </div>
       <div class="standard-card">
         <h4>Mass Spectrometry</h4>
-        <p>Confirms exact molecular weight and amino acid sequence</p>
+        <p>Verifies exact molecular weight and amino acid sequence identity</p>
       </div>
       <div class="standard-card">
-        <h4>Independent Partner</h4>
-        <p>Janoshik Analytics conducts all third-party testing</p>
+        <h4>Janoshik Analytical</h4>
+        <p>Independent third-party lab — the industry gold standard for peptide testing</p>
       </div>
     </div>
   </div>
