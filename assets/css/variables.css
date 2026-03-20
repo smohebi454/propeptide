@@ -1,0 +1,61 @@
+/* ═══════════════════════════════════════════════
+ *  CSS Variables — ProPeptide
+ *  Version: 1
+ * ═══════════════════════════════════════════════ */
+
+:root {
+  /* ── Backgrounds ── */
+  --bg: #ffffff;
+  --surface: #f7f7f7;
+  --surface-2: #eeeeee;
+
+  /* ── Borders ── */
+  --border: rgba(0,0,0,0.08);
+  --border-hover: rgba(0,0,0,0.15);
+
+  /* ── Blue accent (from Shopify site) ── */
+  --blue: #5F97FE;
+  --accent: #5F97FE;
+  --blue-hover: #4a82e6;
+  --blue-soft: rgba(95,151,254,0.12);
+
+  /* ── Orange accent ── */
+  --orange: #FFDDBF;
+  --orange-soft: rgba(255,221,191,0.3);
+
+  /* ── Green (WhatsApp) ── */
+  --green: #25D366;
+  --green-hover: #20bd5a;
+
+  /* ── Neutrals ── */
+  --text: #171717;
+  --text-light: #444444;
+  --gray: #888888;
+  --gray-light: #bbbbbb;
+  --gray-dark: #555555;
+
+  /* ── Footer ── */
+  --footer-bg: #1F1F1F;
+  --footer-text: #cccccc;
+
+  /* ── Status ── */
+  --error: #e05555;
+  --success: #2e9e5a;
+
+  /* ── Radii ── */
+  --radius-sm: 4px;
+  --radius: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 3.75rem;
+
+  /* ── Transitions ── */
+  --transition-fast: 0.15s ease;
+  --transition: 0.3s ease;
+
+  /* ── Layout ── */
+  --max: 1200px;
+
+  /* ── Typography ── */
+  --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --line-height: 1.65;
+}
