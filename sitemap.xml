@@ -19,26 +19,38 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://propeptide.com/about</loc>
+    <loc>https://propeptide.com/faq</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://propeptide.com/wholesale</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://propeptide.com/about</loc>
+    <lastmod>2026-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://propeptide.com/contact</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://propeptide.com/blog</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://propeptide.com/blog/retatrutide-vs-ozempic-vs-mounjaro</loc>
-    <lastmod>2026-03-20</lastmod>
+    <lastmod>2026-03-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

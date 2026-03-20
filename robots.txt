@@ -1,4 +1,21 @@
 User-agent: *
 Allow: /
+Disallow: /blog/drafts/
 
 Sitemap: https://propeptide.com/sitemap.xml
+
+# AI Crawler Rate Limiting
+User-agent: GPTBot
+Crawl-delay: 10
+
+User-agent: ChatGPT-User
+Crawl-delay: 10
+
+User-agent: Google-Extended
+Crawl-delay: 10
+
+User-agent: PerplexityBot
+Crawl-delay: 10
+
+User-agent: ClaudeBot
+Crawl-delay: 10

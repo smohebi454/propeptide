@@ -1,46 +1,45 @@
 /* ═══════════════════════════════════════════════
  *  CSS Variables — ProPeptide
- *  Version: 1
+ *  Version: 2
  * ═══════════════════════════════════════════════ */
 
 :root {
   /* ── Backgrounds ── */
   --bg: #ffffff;
-  --surface: #f7f7f7;
-  --surface-2: #eeeeee;
+  --surface: #f4f7fb;
+  --surface-2: #e8edf5;
 
   /* ── Borders ── */
-  --border: rgba(0,0,0,0.08);
-  --border-hover: rgba(0,0,0,0.15);
+  --border: rgba(10,36,99,0.08);
+  --border-hover: rgba(10,36,99,0.16);
 
-  /* ── Blue accent (from Shopify site) ── */
-  --blue: #5F97FE;
-  --accent: #5F97FE;
-  --blue-hover: #4a82e6;
-  --blue-soft: rgba(95,151,254,0.12);
-
-  /* ── Orange accent ── */
-  --orange: #FFDDBF;
-  --orange-soft: rgba(255,221,191,0.3);
+  /* ── Blue palette (clinical/pharma) ── */
+  --blue: #0A2463;
+  --accent: #0A2463;
+  --blue-mid: #1B3A8C;
+  --blue-hover: #081D52;
+  --blue-light: #3E92CC;
+  --blue-soft: rgba(10,36,99,0.08);
+  --blue-glow: rgba(62,146,204,0.12);
 
   /* ── Green (WhatsApp) ── */
   --green: #25D366;
   --green-hover: #20bd5a;
 
   /* ── Neutrals ── */
-  --text: #171717;
-  --text-light: #444444;
-  --gray: #888888;
-  --gray-light: #bbbbbb;
-  --gray-dark: #555555;
+  --text: #0f1729;
+  --text-light: #3d4663;
+  --gray: #6b7280;
+  --gray-light: #9ca3af;
+  --gray-dark: #4b5563;
 
   /* ── Footer ── */
-  --footer-bg: #1F1F1F;
-  --footer-text: #cccccc;
+  --footer-bg: #061539;
+  --footer-text: #94a3c4;
 
   /* ── Status ── */
-  --error: #e05555;
-  --success: #2e9e5a;
+  --error: #dc2626;
+  --success: #16a34a;
 
   /* ── Radii ── */
   --radius-sm: 4px;
