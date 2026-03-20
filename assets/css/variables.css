@@ -1,50 +1,51 @@
 /* ═══════════════════════════════════════════════
  *  CSS Variables — ProPeptide
- *  Version: 2
+ *  Version: 3  (matched to product packaging)
  * ═══════════════════════════════════════════════ */
 
 :root {
   /* ── Backgrounds ── */
   --bg: #ffffff;
-  --surface: #f4f7fb;
-  --surface-2: #e8edf5;
+  --surface: #f4f8fc;
+  --surface-2: #e6eef7;
 
   /* ── Borders ── */
-  --border: rgba(10,36,99,0.08);
-  --border-hover: rgba(10,36,99,0.16);
+  --border: rgba(21,101,192,0.08);
+  --border-hover: rgba(21,101,192,0.18);
 
-  /* ── Blue palette (clinical/pharma) ── */
-  --blue: #0A2463;
-  --accent: #0A2463;
-  --blue-mid: #1B3A8C;
-  --blue-hover: #081D52;
-  --blue-light: #3E92CC;
-  --blue-soft: rgba(10,36,99,0.08);
-  --blue-glow: rgba(62,146,204,0.12);
+  /* ── Blue palette (matched to pen/packaging) ── */
+  --blue: #1565C0;
+  --accent: #1565C0;
+  --blue-dark: #0D47A1;
+  --blue-hover: #0D47A1;
+  --blue-light: #42A5F5;
+  --blue-bright: #2196F3;
+  --blue-soft: rgba(21,101,192,0.08);
+  --blue-glow: rgba(33,150,243,0.14);
 
-  /* ── Green (WhatsApp) ── */
-  --green: #25D366;
-  --green-hover: #20bd5a;
+  /* ── Teal accent (from pen "20mg" badges) ── */
+  --teal: #00ACC1;
+  --teal-soft: rgba(0,172,193,0.10);
 
   /* ── Neutrals ── */
-  --text: #0f1729;
-  --text-light: #3d4663;
+  --text: #0D1B2A;
+  --text-light: #374151;
   --gray: #6b7280;
   --gray-light: #9ca3af;
   --gray-dark: #4b5563;
 
   /* ── Footer ── */
-  --footer-bg: #061539;
-  --footer-text: #94a3c4;
+  --footer-bg: #0A1628;
+  --footer-text: #8da4c4;
 
   /* ── Status ── */
   --error: #dc2626;
   --success: #16a34a;
 
   /* ── Radii ── */
-  --radius-sm: 4px;
-  --radius: 8px;
-  --radius-lg: 12px;
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
   --radius-pill: 3.75rem;
 
   /* ── Transitions ── */
