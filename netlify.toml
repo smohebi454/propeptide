@@ -93,6 +93,31 @@
   status = 200
 
 [[redirects]]
+  from = "/blog/what-is-retatrutide"
+  to = "/blog/what-is-retatrutide.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/peptide-storage-stability-guide"
+  to = "/blog/peptide-storage-stability-guide.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/glp1-receptor-agonists-explained"
+  to = "/blog/glp1-receptor-agonists-explained.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/retatrutide-clinical-trials-phase-2-data"
+  to = "/blog/retatrutide-clinical-trials-phase-2-data.html"
+  status = 200
+
+[[redirects]]
+  from = "/blog/peptide-purity-testing-hplc-mass-spectrometry"
+  to = "/blog/peptide-purity-testing-hplc-mass-spectrometry.html"
+  status = 200
+
+[[redirects]]
   from = "/privacy-policy"
   to = "/privacy-policy.html"
   status = 200
