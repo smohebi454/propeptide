@@ -117,6 +117,11 @@ function buildWholesaleEmail(data) {
   var orgName = data.organization || data['org-name'] || '—';
   var contactName = data.contact_name || data['contact-name'] || data.name || '—';
   var quantity = data.quantity || '—';
+  var product = data.product || '—';
+  var format = data.format || '—';
+  var timeline = data.timeline || '—';
+  var country = data.country || '—';
+  var website = data.website || '—';
 
   return [
     '<div style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;max-width:560px;margin:0 auto;padding:24px;color:#0f1729">',
@@ -129,7 +134,12 @@ function buildWholesaleEmail(data) {
     '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Contact Name</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb">' + esc(contactName) + '</td></tr>',
     '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Email</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb"><a href="mailto:' + esc(data.email || '') + '" style="color:#0A2463">' + esc(data.email || '—') + '</a></td></tr>',
     '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Phone</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb">' + esc(data.phone || '—') + '</td></tr>',
-    '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Quantity Needed</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-weight:600;color:#0A2463">' + esc(quantity) + '</td></tr>',
+    '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Country</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb">' + esc(country) + '</td></tr>',
+    '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Website</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb">' + esc(website) + '</td></tr>',
+    '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Product</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-weight:600">' + esc(product) + '</td></tr>',
+    '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Volume</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-weight:600;color:#0A2463">' + esc(quantity) + '</td></tr>',
+    '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Supply Format</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb">' + esc(format) + '</td></tr>',
+    '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280">Timeline</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb">' + esc(timeline) + '</td></tr>',
     '    <tr><td style="padding:10px 0;color:#6b7280;vertical-align:top">Message</td><td style="padding:10px 0;line-height:1.6">' + esc(data.message || '—') + '</td></tr>',
     '  </table>',
     '  <div style="margin-top:24px;text-align:center">',
