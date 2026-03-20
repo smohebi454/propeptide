@@ -9,7 +9,8 @@
  *   - "wholesale"  → wholesale/B2B enquiry notification
  *
  * Environment variables (Netlify UI → Site → Environment):
- *   RESEND_API_KEY — Resend API key
+ *   RESEND_API_KEY        — Resend API key
+ *   TURNSTILE_SECRET_KEY  — Cloudflare Turnstile secret key
  */
 
 var NOTIFY_EMAILS = [
@@ -41,6 +42,36 @@ exports.handler = async function (event) {
   // Only process known forms
   if (formName !== 'contact' && formName !== 'wholesale') {
     return { statusCode: 200, body: JSON.stringify({ status: 'skipped', reason: 'unknown form: ' + formName }) };
+  }
+
+  // ── Turnstile verification ──
+  var turnstileSecret = process.env.TURNSTILE_SECRET_KEY;
+  var turnstileToken = data['cf-turnstile-response'] || '';
+
+  if (turnstileSecret) {
+    if (!turnstileToken) {
+      console.warn('submission-created: No Turnstile token — rejecting ' + formName + ' submission');
+      return { statusCode: 403, body: JSON.stringify({ error: 'Bot verification failed' }) };
+    }
+
+    try {
+      var verifyRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'secret=' + encodeURIComponent(turnstileSecret) + '&response=' + encodeURIComponent(turnstileToken)
+      });
+      var verifyData = await verifyRes.json();
+
+      if (!verifyData.success) {
+        console.warn('submission-created: Turnstile verification failed — ' + JSON.stringify(verifyData['error-codes']));
+        return { statusCode: 403, body: JSON.stringify({ error: 'Bot verification failed' }) };
+      }
+    } catch (err) {
+      console.error('submission-created: Turnstile verify fetch failed:', err.message);
+      return { statusCode: 502, body: JSON.stringify({ error: 'Verification service unreachable' }) };
+    }
+  } else {
+    console.warn('submission-created: TURNSTILE_SECRET_KEY not set — skipping bot check');
   }
 
   var apiKey = process.env.RESEND_API_KEY;
