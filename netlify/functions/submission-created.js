@@ -119,6 +119,29 @@ exports.handler = async function (event) {
     return { statusCode: 502, body: JSON.stringify({ error: 'Email service unreachable' }) };
   }
 
+  // ── Forward to n8n Order CRM (fire-and-forget) ──
+  try {
+    fetch('http://89.167.111.214:5678/webhook/order-webhook', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        form_name: formName,
+        site_url: 'https://propeptide.com',
+        name: data.name || data.contact_name || data['contact-name'] || '',
+        contact_name: data.contact_name || data['contact-name'] || data.name || '',
+        email: data.email || '',
+        phone: data.phone || '',
+        product: data.product || '',
+        quantity: data.quantity || '',
+        country: data.country || 'UAE',
+        message: data.message || ''
+      })
+    }).catch(function() {});
+    console.log('submission-created: Forwarded to n8n CRM for ' + formName);
+  } catch (e) {
+    // non-critical
+  }
+
   return { statusCode: 200, body: JSON.stringify({ status: 'ok', email: 'sent' }) };
 };
 
