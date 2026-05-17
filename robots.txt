@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /blog/drafts/
 
-Sitemap: https://remedium.com/sitemap.xml
+Sitemap: https://propeptide.com/sitemap.xml
 
 # AI Crawler Rate Limiting
 User-agent: GPTBot

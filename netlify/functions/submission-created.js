@@ -83,10 +83,10 @@ exports.handler = async function (event) {
   var subject, html;
 
   if (formName === 'contact') {
-    subject = 'Remedium — New Contact Enquiry from ' + esc(data.name || 'Unknown');
+    subject = 'ProPeptide — New Contact Enquiry from ' + esc(data.name || 'Unknown');
     html = buildContactEmail(data);
   } else if (formName === 'wholesale') {
-    subject = 'Remedium — New Wholesale Enquiry from ' + esc(data.organization || data['org-name'] || 'Unknown');
+    subject = 'ProPeptide — New Wholesale Enquiry from ' + esc(data.organization || data['org-name'] || 'Unknown');
     html = buildWholesaleEmail(data);
   }
 
@@ -99,7 +99,7 @@ exports.handler = async function (event) {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        from: 'Remedium <orders@remypeptides.com>',
+        from: 'ProPeptide <orders@remypeptides.com>',
         to: NOTIFY_EMAILS,
         subject: subject,
         html: html,
@@ -126,7 +126,7 @@ exports.handler = async function (event) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         form_name: formName,
-        site_url: 'https://remedium.com',
+        site_url: 'https://propeptide.com',
         name: data.name || data.contact_name || data['contact-name'] || '',
         contact_name: data.contact_name || data['contact-name'] || data.name || '',
         email: data.email || '',
@@ -150,7 +150,7 @@ function buildContactEmail(data) {
     '<div style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;max-width:560px;margin:0 auto;padding:24px;color:#0f1729">',
     '  <div style="text-align:center;padding-bottom:20px;border-bottom:2px solid #0A2463">',
     '    <h1 style="margin:0;font-size:22px;color:#0A2463">New Contact Enquiry</h1>',
-    '    <p style="margin:8px 0 0;color:#6b7280;font-size:14px">Remedium — remedium.com</p>',
+    '    <p style="margin:8px 0 0;color:#6b7280;font-size:14px">ProPeptide — propeptide.com</p>',
     '  </div>',
     '  <table style="width:100%;border-collapse:collapse;font-size:14px;margin-top:20px">',
     '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280;width:120px">Name</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-weight:600">' + esc(data.name || '—') + '</td></tr>',
@@ -162,7 +162,7 @@ function buildContactEmail(data) {
     '    <a href="mailto:' + esc(data.email || '') + '" style="display:inline-block;padding:10px 24px;background:#0A2463;color:#fff;text-decoration:none;border-radius:6px;font-weight:600;font-size:14px">Reply to ' + esc(data.name || 'Sender') + '</a>',
     '  </div>',
     '  <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0">',
-    '  <p style="margin:0;font-size:12px;color:#9ca3af;text-align:center">Remedium — For Research Use Only<br>remedium.com</p>',
+    '  <p style="margin:0;font-size:12px;color:#9ca3af;text-align:center">ProPeptide — For Research Use Only<br>propeptide.com</p>',
     '</div>'
   ].join('\n');
 }
@@ -181,7 +181,7 @@ function buildWholesaleEmail(data) {
     '<div style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;max-width:560px;margin:0 auto;padding:24px;color:#0f1729">',
     '  <div style="text-align:center;padding-bottom:20px;border-bottom:2px solid #0A2463">',
     '    <h1 style="margin:0;font-size:22px;color:#0A2463">New Wholesale Enquiry</h1>',
-    '    <p style="margin:8px 0 0;color:#6b7280;font-size:14px">Remedium — remedium.com</p>',
+    '    <p style="margin:8px 0 0;color:#6b7280;font-size:14px">ProPeptide — propeptide.com</p>',
     '  </div>',
     '  <table style="width:100%;border-collapse:collapse;font-size:14px;margin-top:20px">',
     '    <tr><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;color:#6b7280;width:140px">Organization</td><td style="padding:10px 0;border-bottom:1px solid #e5e7eb;font-weight:600">' + esc(orgName) + '</td></tr>',
@@ -200,7 +200,7 @@ function buildWholesaleEmail(data) {
     '    <a href="mailto:' + esc(data.email || '') + '" style="display:inline-block;padding:10px 24px;background:#0A2463;color:#fff;text-decoration:none;border-radius:6px;font-weight:600;font-size:14px">Reply to ' + esc(contactName) + '</a>',
     '  </div>',
     '  <hr style="border:none;border-top:1px solid #e5e7eb;margin:24px 0">',
-    '  <p style="margin:0;font-size:12px;color:#9ca3af;text-align:center">Remedium — For Research Use Only<br>remedium.com</p>',
+    '  <p style="margin:0;font-size:12px;color:#9ca3af;text-align:center">ProPeptide — For Research Use Only<br>propeptide.com</p>',
     '</div>'
   ].join('\n');
 }
