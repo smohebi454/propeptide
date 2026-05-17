@@ -1,18 +1,18 @@
-# ProPeptide Content Export (Mar 20, 2026)
+# Remedium Content Export (Mar 20, 2026)
 
-Extracted from propeptide.com (Shopify) for Netlify migration.
+Extracted from remedium.com (Shopify) for Netlify migration.
 
 ---
 
 ## Brand
 
-- **Name:** ProPeptide
+- **Name:** Remedium
 - **Tagline:** "Welcome to the Future of Biology"
-- **Scrolling text:** "Research Starts with ProPeptide" / "Research Grade Peptides"
-- **Contact:** +34 672 737 521 | info@propeptide.com
-- **Telegram:** https://t.me/ProPeptide
+- **Scrolling text:** "Research Starts with Remedium" / "Research Grade Peptides"
+- **Contact:** +34 672 737 521 | info@remedium.com
+- **Telegram:** https://t.me/Remedium
 - **Address:** Business Bay, Dubai, UAE
-- **Copyright:** © 2026 ProPeptide
+- **Copyright:** © 2026 Remedium
 
 ---
 
@@ -29,7 +29,7 @@ Home | All Peptides | Test Results | About Us | Contact Us | Blog
 - Subheadline: "Precision Crafted Research Peptides"
 - Body: "High-purity compounds. Independent lab verification. Trusted by researchers seeking uncompromised quality."
 
-### Value Propositions ("Why ProPeptide?")
+### Value Propositions ("Why Remedium?")
 
 1. **Precision-Focused:** "Small-batch synthesis with exact amino-acid sequencing."
 2. **No Middlemen:** "Direct from our facility to your facility."
@@ -38,7 +38,7 @@ Home | All Peptides | Test Results | About Us | Contact Us | Blog
 ### FAQ (8 questions)
 
 **Q: Where can I buy research peptides online?**
-A: Lab-grade peptides like Retatrutide available directly from ProPeptide, GMP-certified, ≥99% purity, for research use only.
+A: Lab-grade peptides like Retatrutide available directly from Remedium, GMP-certified, ≥99% purity, for research use only.
 
 **Q: What are research peptides?**
 A: Laboratory-synthesized amino acid chains involved in metabolism, tissue repair, cellular signaling, and hormonal regulation; studied for therapeutic potential.
@@ -59,7 +59,7 @@ A: Retatrutide FlexiPens include stabilizing excipients; store refrigerated at 2
 A: Retatrutide, BPC-157, TB-500, and GHK-Cu are widely studied in metabolic and regenerative research.
 
 **Q: Do you ship internationally?**
-A: Contact via Telegram (https://t.me/ProPeptide) for international shipping.
+A: Contact via Telegram (https://t.me/Remedium) for international shipping.
 
 **Q: How quickly will I receive my peptide order?**
 A: Dubai orders fulfilled same-day, delivered within 4 hours during business hours.
@@ -152,7 +152,7 @@ Compares semaglutide (Ozempic), tirzepatide (Mounjaro), and retatrutide. Three p
 ## Policies
 
 ### Refund Policy
-All sales final due to temperature-sensitive nature of products. Exception: damaged/incorrect items — contact within 24 hours with photos to info@propeptide.com.
+All sales final due to temperature-sensitive nature of products. Exception: damaged/incorrect items — contact within 24 hours with photos to info@remedium.com.
 
 ### Privacy Policy
 Last updated Feb 28, 2026. Collects contact, financial, account, transaction, device, usage info. UAE law applies, Dubai court jurisdiction.

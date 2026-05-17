@@ -134,20 +134,20 @@
 
 # ── HTTP → HTTPS ──
 [[redirects]]
-  from = "http://propeptide.com/*"
-  to = "https://propeptide.com/:splat"
+  from = "http://remedium.com/*"
+  to = "https://remedium.com/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://www.propeptide.com/*"
-  to = "https://propeptide.com/:splat"
+  from = "http://www.remedium.com/*"
+  to = "https://remedium.com/:splat"
   status = 301
   force = true
 
 # ── WWW → non-WWW ──
 [[redirects]]
-  from = "https://www.propeptide.com/*"
-  to = "https://propeptide.com/:splat"
+  from = "https://www.remedium.com/*"
+  to = "https://remedium.com/:splat"
   status = 301
   force = true
